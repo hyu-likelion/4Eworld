@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <script src="calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="row"><input class="show" type="text"></div>
+            <div class="row">
+                <button onclick="clean()" class="clear">AC</button>
+                <button onclick="add('/')" class="normal symbol">&divide;</button>
+            </div>
+            <div class="row">
+                <button onclick="add('7')" class="normal">7</button>
+                <button onclick="add('8')" class="normal">8</button>
+                <button onclick="add('9')" class="normal">9</button>
+                <button onclick="add('*')" class="normal symbol">x</button>
+            </div>
+            <div class="row">
+                <button onclick="add('4')" class="normal">4</button>
+                <button onclick="add('5')" class="normal">5</button>
+                <button onclick="add('6')" class="normal">6</button>
+                <button onclick="add('-')" class="normal symbol">-</button>
+            </div>
+            <div class="row">
+                <button onclick="add('1')" class="normal">1</button>
+                <button onclick="add('2')" class="normal">2</button>
+                <button onclick="add('3')" class="normal">3</button>
+                <button onclick="add('+')" class="normal symbol">+</button>
+            </div>
+            <div class="row">
+                <button onclick="add('0')" class="half">0</button>
+                <button onclick="add('.')" class="normal">.</button>
+                <button onclick="evaluation()" class="normal symbol">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
