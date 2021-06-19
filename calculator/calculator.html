@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="calculator.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+        <div class="box">
+            <input type="text">
+        </div>
+        <div class="box">
+            <button class="ac" type="submit" onclick="deleting()">AC</button>
+            <button class="other1" type="submit" onclick="calForm('%')">&divide</button>
+        </div>
+        <div class="box">
+            <button type="submit" onclick="calForm(7)">7</button>
+            <button type="submit" onclick="calForm(8)">8</button>
+            <button type="submit" onclick="calForm(9)">9</button>
+            <button class="other" type="submit" onclick="calForm('*')">x</button>
+        </div>
+        <div class="box">
+            <button type="submit" onclick="calForm(6)">6</button>
+            <button type="submit" onclick="calForm(5)">5</button>
+            <button type="submit" onclick="calForm(4)">4</button>
+            <button class="other" type="submit" onclick="calForm('+')">+</button>
+        </div>
+        <div class="box">
+            <button type="submit" onclick="calForm(3)">3</button>
+            <button type="submit" onclick="calForm(2)">2</button>
+            <button type="submit" onclick="calForm(1)">1</button>
+            <button class="other" type="submit" onclick="calForm('-')">-</button>
+        </div>
+        <div class="box">
+            <button class="zero" type="submit" onclick="calForm(0)">0</button>
+            <button type="submit" onclick="calForm('.')">.</button>
+            <button class="other" type="submit" onclick="calculate()">=</button>
+        </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
